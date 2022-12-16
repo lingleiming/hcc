@@ -8,7 +8,7 @@
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body gateway.js
+^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body https://raw.githubusercontent.com/lingleiming/hcc/main/kugou.js
 [mitm] 
 hostname = *.gateway.*
 *******************************/
