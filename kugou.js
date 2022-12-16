@@ -4,7 +4,7 @@
 使用声明：️此脚本仅供学习与交流，
         请勿转载与贩卖！️️️
 [rewrite_local]
-^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body gateway.js
+^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body https://raw.githubusercontent.com/lingleiming/hcc/main/kugou.js
 [mitm] 
 hostname = *.gateway.*
 */
