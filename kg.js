@@ -1,4 +1,5 @@
 var body=$response.body;
+var obj = JSON.parse(body);
 body = body.replace(/"user_type\":\d/g,'"user_type":1');
 body = body.replace(/"user_y_type\":\d/g,'"user_y_type":1');
 body = body.replace(/"is_vip\":\d/g,'"is_vip":1');
@@ -25,4 +26,5 @@ body = body.replace(/"duration\":\d+/g,'"duration":873616277659');
 body = body.replace(/"p_grade\":\d+/g,'"p_grade":20');
 body = body.replace(/"p_current_point\":\d+/g,'"p_current_point":873616277659');
 body = body.replace(/"p_next_grade\":\d+/g,'"p_next_grade":20');
+body = JSON.stringify(obj);
 $done(body);
