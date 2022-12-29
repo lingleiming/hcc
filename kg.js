@@ -1,17 +1,3 @@
-/*******************************
-  公众号:木木IOS分享
-关注了解更多新科技！！！
-酷狗
-脚本名称:酷狗
-使用声明：️此脚本仅供学习与交流，
-        请勿转载与贩卖！️️️
-群1077223830
-*******************************
-[rewrite_local]
-^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body https://raw.githubusercontent.com/lingleiming/hcc/main/kg.js
-[mitm] 
-hostname = *.gateway.*
-*******************************/
 var body=$response.body;
 body = body.replace(/"user_type\":\d/g,'"user_type":1');
 body = body.replace(/"user_y_type\":\d/g,'"user_y_type":1');
