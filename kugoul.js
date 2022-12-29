@@ -1,6 +1,6 @@
 /*******************************
 [rewrite_local]
-^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body https://raw.githubusercontent.com/lingleiming/hcc/main/kg.js
+^http[s]?:\/\/gateway.kugou.com.+$ url script-response-body https://raw.githubusercontent.com/lingleiming/hcc/main/kugoul.js
 [mitm] 
 hostname = *.kugou.*
 *******************************/
